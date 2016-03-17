@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5064B61C9B49EF00E669F7 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5064B51C9B49EF00E669F7 /* PlaySoundsViewController.swift */; };
 		0ECBEFC11C9B2458005C898C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECBEFC01C9B2458005C898C /* AppDelegate.swift */; };
 		0ECBEFC31C9B2458005C898C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECBEFC21C9B2458005C898C /* ViewController.swift */; };
 		0ECBEFC61C9B2458005C898C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ECBEFC41C9B2458005C898C /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E5064B51C9B49EF00E669F7 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		0ECBEFBD1C9B2458005C898C /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ECBEFC01C9B2458005C898C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ECBEFC21C9B2458005C898C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		0ECBEFBF1C9B2458005C898C /* Pitch Perfect */ = {
 			isa = PBXGroup;
 			children = (
+				0E5064B51C9B49EF00E669F7 /* PlaySoundsViewController.swift */,
 				0ECBEFC01C9B2458005C898C /* AppDelegate.swift */,
 				0ECBEFC21C9B2458005C898C /* ViewController.swift */,
 				0ECBEFC41C9B2458005C898C /* Main.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ECBEFC31C9B2458005C898C /* ViewController.swift in Sources */,
+				0E5064B61C9B49EF00E669F7 /* PlaySoundsViewController.swift in Sources */,
 				0ECBEFC11C9B2458005C898C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
