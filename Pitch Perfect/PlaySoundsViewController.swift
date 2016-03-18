@@ -59,6 +59,7 @@ class PlaySoundsViewController: UIViewController {
         audioPlayer.stop()
         audioEngine.stop()
         audioEngine.reset()
+        setSessionPlayerOn()
         
         let audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
@@ -77,12 +78,40 @@ class PlaySoundsViewController: UIViewController {
         audioPlayerNode.play()
     }
     
+    func setSessionPlayerOn()
+    {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.Speaker)
+        } catch _ {
+        }
+    }
+    
+    func setSessionPlayerOff()
+    {
+        do {
+            try AVAudioSession.sharedInstance().setActive(false)
+        } catch _ {
+        }
+    }
+    
     @IBAction func stopAudio(sender: UIButton) {
         audioPlayer.stop()
+        setSessionPlayerOff()
+
     }
     
     func playAudio(rate: Float)
     {
+        setSessionPlayerOn()
+
         audioPlayer.stop()
         audioPlayer.rate = rate
         audioPlayer.currentTime = 0
