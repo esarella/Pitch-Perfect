@@ -34,18 +34,19 @@
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVL-hg-VPv">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="78" id="wXK-wg-cQS"/>
+                                    <constraint firstAttribute="width" constant="78" id="wXK-wg-cQS">
+                                        <variation key="widthClass=compact" constant="92"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.098039215686274508" green="0.2196078431372549" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="wXK-wg-cQS"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="161" y="289" width="78" height="21"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="wXK-wg-cQS"/>
                                     </mask>
@@ -55,13 +56,19 @@
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pXt-Pl-yj5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="108" id="FSC-6h-hNp"/>
-                            <constraint firstItem="XVL-hg-VPv" firstAttribute="top" secondItem="pXt-Pl-yj5" secondAttribute="bottom" constant="8" symbolic="YES" id="H0F-Hb-NZo"/>
+                            <constraint firstItem="XVL-hg-VPv" firstAttribute="top" secondItem="pXt-Pl-yj5" secondAttribute="bottom" constant="8" symbolic="YES" id="H0F-Hb-NZo">
+                                <variation key="widthClass=compact" constant="17"/>
+                            </constraint>
                             <constraint firstItem="pXt-Pl-yj5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IO9-hG-hDW"/>
                             <constraint firstItem="pXt-Pl-yj5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QDs-Cu-rr2">
                                 <variation key="widthClass=compact" constant="-78"/>
                             </constraint>
-                            <constraint firstItem="XVL-hg-VPv" firstAttribute="centerX" secondItem="wKM-9K-qFr" secondAttribute="centerX" id="XVu-OR-jPy"/>
-                            <constraint firstItem="pXt-Pl-yj5" firstAttribute="centerX" secondItem="XVL-hg-VPv" secondAttribute="centerX" id="Z3U-yN-Lk1"/>
+                            <constraint firstItem="XVL-hg-VPv" firstAttribute="centerX" secondItem="wKM-9K-qFr" secondAttribute="centerX" id="XVu-OR-jPy">
+                                <variation key="widthClass=compact" constant="-7"/>
+                            </constraint>
+                            <constraint firstItem="pXt-Pl-yj5" firstAttribute="centerX" secondItem="XVL-hg-VPv" secondAttribute="centerX" id="Z3U-yN-Lk1">
+                                <variation key="widthClass=compact" constant="7"/>
+                            </constraint>
                             <constraint firstAttribute="bottom" secondItem="wKM-9K-qFr" secondAttribute="bottom" constant="20" symbolic="YES" id="c1U-cL-9dm"/>
                             <constraint firstItem="pXt-Pl-yj5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ig8-5i-Lnw"/>
                         </constraints>
@@ -156,27 +163,51 @@
                                     <action selector="stopAudio:" destination="A0N-Op-Q9x" eventType="touchUpInside" id="hY4-Hs-yBR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZb-02-c7c">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="chipmunk"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="A0N-Op-Q9x" eventType="touchUpInside" id="k3X-uw-boJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmY-5M-6pT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="darthvader"/>
+                                <connections>
+                                    <action selector="playDarthvaderAudio:" destination="A0N-Op-Q9x" eventType="touchUpInside" id="oqa-Uj-Mfk"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="7ao-iD-CmA" firstAttribute="leading" secondItem="eUc-uA-mTS" secondAttribute="leading" id="6Sh-vE-oTJ"/>
                             <constraint firstItem="7ao-iD-CmA" firstAttribute="top" secondItem="Rqg-hB-rV9" secondAttribute="bottom" constant="8" symbolic="YES" id="GlI-wz-NhF"/>
                             <constraint firstItem="XyV-i4-kuy" firstAttribute="centerX" secondItem="eUc-uA-mTS" secondAttribute="centerX" id="HZK-wo-INt"/>
+                            <constraint firstItem="iZb-02-c7c" firstAttribute="top" secondItem="7ao-iD-CmA" secondAttribute="bottom" constant="13" id="N0D-FY-Npf"/>
                             <constraint firstAttribute="trailing" secondItem="ZaU-Wm-igS" secondAttribute="trailing" id="QCR-6B-mto"/>
                             <constraint firstItem="vm9-Iz-Ko9" firstAttribute="top" secondItem="XyV-i4-kuy" secondAttribute="bottom" constant="10" id="Z36-VC-gYl"/>
                             <constraint firstItem="ZaU-Wm-igS" firstAttribute="top" secondItem="7ao-iD-CmA" secondAttribute="top" id="eXh-W2-5qI"/>
+                            <constraint firstItem="iZb-02-c7c" firstAttribute="leading" secondItem="7ao-iD-CmA" secondAttribute="leading" id="vwg-PE-1p7"/>
+                            <constraint firstItem="OmY-5M-6pT" firstAttribute="leading" secondItem="ZaU-Wm-igS" secondAttribute="leading" id="wnE-Fl-hzv"/>
+                            <constraint firstItem="OmY-5M-6pT" firstAttribute="top" secondItem="iZb-02-c7c" secondAttribute="top" id="yIX-na-KNF"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="7ao-iD-CmA"/>
                                 <exclude reference="ZaU-Wm-igS"/>
                                 <exclude reference="XyV-i4-kuy"/>
+                                <exclude reference="iZb-02-c7c"/>
+                                <exclude reference="OmY-5M-6pT"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="6Sh-vE-oTJ"/>
                                 <exclude reference="GlI-wz-NhF"/>
                                 <exclude reference="QCR-6B-mto"/>
                                 <exclude reference="eXh-W2-5qI"/>
+                                <exclude reference="N0D-FY-Npf"/>
+                                <exclude reference="vwg-PE-1p7"/>
+                                <exclude reference="wnE-Fl-hzv"/>
+                                <exclude reference="yIX-na-KNF"/>
                                 <exclude reference="HZK-wo-INt"/>
                                 <exclude reference="Z36-VC-gYl"/>
                             </mask>
@@ -186,12 +217,18 @@
                                 <include reference="7ao-iD-CmA"/>
                                 <include reference="ZaU-Wm-igS"/>
                                 <include reference="XyV-i4-kuy"/>
+                                <include reference="iZb-02-c7c"/>
+                                <include reference="OmY-5M-6pT"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="6Sh-vE-oTJ"/>
                                 <include reference="GlI-wz-NhF"/>
                                 <include reference="QCR-6B-mto"/>
                                 <include reference="eXh-W2-5qI"/>
+                                <include reference="N0D-FY-Npf"/>
+                                <include reference="vwg-PE-1p7"/>
+                                <include reference="wnE-Fl-hzv"/>
+                                <include reference="yIX-na-KNF"/>
                                 <include reference="HZK-wo-INt"/>
                                 <include reference="Z36-VC-gYl"/>
                             </mask>
@@ -222,6 +259,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="200" height="200"/>
+        <image name="darthvader" width="200" height="200"/>
         <image name="fastimage" width="200" height="200"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slowImage" width="200" height="200"/>
