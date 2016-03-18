@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E5064B61C9B49EF00E669F7 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5064B51C9B49EF00E669F7 /* PlaySoundsViewController.swift */; };
+		0E5064B81C9B4D3E00E669F7 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E5064B71C9B4D3E00E669F7 /* movie_quote.mp3 */; };
 		0ECBEFC11C9B2458005C898C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECBEFC01C9B2458005C898C /* AppDelegate.swift */; };
 		0ECBEFC31C9B2458005C898C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECBEFC21C9B2458005C898C /* ViewController.swift */; };
 		0ECBEFC61C9B2458005C898C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ECBEFC41C9B2458005C898C /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		0E5064B51C9B49EF00E669F7 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		0E5064B71C9B4D3E00E669F7 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 		0ECBEFBD1C9B2458005C898C /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ECBEFC01C9B2458005C898C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ECBEFC21C9B2458005C898C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		0ECBEFBF1C9B2458005C898C /* Pitch Perfect */ = {
 			isa = PBXGroup;
 			children = (
+				0E5064B71C9B4D3E00E669F7 /* movie_quote.mp3 */,
 				0E5064B51C9B49EF00E669F7 /* PlaySoundsViewController.swift */,
 				0ECBEFC01C9B2458005C898C /* AppDelegate.swift */,
 				0ECBEFC21C9B2458005C898C /* ViewController.swift */,
@@ -234,6 +237,7 @@
 			files = (
 				0ECBEFCB1C9B2458005C898C /* LaunchScreen.storyboard in Resources */,
 				0ECBEFC81C9B2458005C898C /* Assets.xcassets in Resources */,
+				0E5064B81C9B4D3E00E669F7 /* movie_quote.mp3 in Resources */,
 				0ECBEFC61C9B2458005C898C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
