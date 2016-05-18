@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="po0-gK-DsV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="po0-gK-DsV">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Record-->
@@ -53,7 +53,7 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pXt-Pl-yj5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="108" id="FSC-6h-hNp"/>
                             <constraint firstItem="XVL-hg-VPv" firstAttribute="top" secondItem="pXt-Pl-yj5" secondAttribute="bottom" constant="8" symbolic="YES" id="H0F-Hb-NZo">
@@ -86,9 +86,9 @@
                                 <exclude reference="QDs-Cu-rr2"/>
                                 <exclude reference="Z3U-yN-Lk1"/>
                                 <exclude reference="ig8-5i-Lnw"/>
+                                <exclude reference="c1U-cL-9dm"/>
                                 <exclude reference="H0F-Hb-NZo"/>
                                 <exclude reference="XVu-OR-jPy"/>
-                                <exclude reference="c1U-cL-9dm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -103,9 +103,9 @@
                                 <include reference="QDs-Cu-rr2"/>
                                 <include reference="Z3U-yN-Lk1"/>
                                 <include reference="ig8-5i-Lnw"/>
+                                <include reference="c1U-cL-9dm"/>
                                 <include reference="H0F-Hb-NZo"/>
                                 <include reference="XVu-OR-jPy"/>
-                                <include reference="c1U-cL-9dm"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +129,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vm9-Iz-Ko9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eUc-uA-mTS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="150" verticalHuggingPriority="150" horizontalCompressionResistancePriority="150" verticalCompressionResistancePriority="150" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ao-iD-CmA">
@@ -195,7 +196,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XyV-i4-kuy" firstAttribute="centerY" secondItem="eUc-uA-mTS" secondAttribute="centerY" id="SPR-r0-6jx">
                                 <variation key="widthClass=compact" constant="255"/>

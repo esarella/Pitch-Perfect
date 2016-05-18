@@ -8,8 +8,20 @@
 
 import Foundation
 
-class RecordedAudio: NSObject
+class RecordedAudio
 {
     var filePathUrl: NSURL!
     var title: String!
+    
+    init() {
+        
+        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        
+        let recordingName = "my_audio.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = NSURL.fileURLWithPathComponents(pathArray)
+
+        filePathUrl = filePath
+        title = recordingName
+    }
 }
